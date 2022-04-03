@@ -1,0 +1,18 @@
+<div id="divWeatherMain">
+    <div class="weatherWidgetData">
+        <div class="weatherWidgetRow">
+            <img src='{{"http://openweathermap.org/img/wn/" + WeatherData.weather[0].icon + "@2x.png"}}' alt="">
+            <div class="weatherWidgetText">{{WeatherData.weather[0].description.toUpperCase()}}</div>
+        </div>
+     </div>
+    <div class="weatherWidgetData">
+        
+        <div class="weatherWidgetRow" style="font-size: 32px;margin-top: 5px;">{{WeatherData.temp_celcius}}°</div>
+        <div class="weatherWidgetRow" style="font-size: 25px;margin-top: 10px;">{{WeatherData.name}}</div>
+    </div> 
+    <div class="weatherWidgetData">
+        <div class="weatherWidgetRow" style="font-size: 14px;">{{WeatherData.temp_min}}° / {{WeatherData.temp_max}}°</div>
+        <div class="weatherWidgetRow" style="font-size: 14px;">Feels Like: {{WeatherData.temp_feels_like}}°</div>
+        <div class="weatherWidgetRow" style="font-size: 14px;">Humidity: {{WeatherData.main.humidity}}%</div> 
+    </div>
+</div>

@@ -1,0 +1,26 @@
+#divWeatherMain {
+    width: 100%;
+    display: grid;
+    justify-content: space-between;
+    border-radius: 10px;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(8,7,42,1) 75%, rgb(8, 10, 63) 100%);
+    color: white;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+.weatherWidgetRow{
+    display:block;
+    margin:0 auto;
+    width: fit-content;
+}
+.weatherWidgetData{
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
